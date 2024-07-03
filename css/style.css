@@ -17,3 +17,7 @@ article {
 .card > div.card-body{
     background-color: #f0dddd;
 }
+
+.card-body p.card-text{
+    font-size: .9rem;
+}
