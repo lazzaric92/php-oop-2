@@ -17,8 +17,12 @@ require_once __DIR__ . "/db/db.php";
 </head>
 <body>
     <header class="bg-white p-3 mb-3">
-        <div class="container">
-            <h1 class="fw-bold mb-0">Boolshop</h1>
+        <div class="container d-flex align-items-center">
+            <h1 class="fw-bold mb-0 me-3">Boolshop</h1>
+            <div class="d-flex flex-column">
+                <span><i class="fa-solid fa-paw fs-5 ms-4"></i></span>
+                <span><i class="fa-solid fa-paw fs-5"></i></span>
+            </div>
         </div>
     </header>
     <main class="py-4 mb-3">
@@ -28,7 +32,7 @@ require_once __DIR__ . "/db/db.php";
                     <article class="col-3 mb-3">
                         <div class="card h-100">
                             <div class="card-image p-3">
-                                <img src=" <?php echo $product->getImgUrl() ?> " class="card-img-top" alt="<?php echo $product->getName() ?>" >
+                                <img src="<?php echo $product->getImgUrl() ?>" class="card-img-top" alt="<?php echo $product->getName() ?>" >
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title mb-2 fw-bold"><?php echo $product->getName() ?></h5>
