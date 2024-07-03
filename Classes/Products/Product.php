@@ -4,13 +4,13 @@ class Product{
     private $name;
     private $price;
     private $imgUrl;
-    private $categoryName;
+    private $category;
 
-    public function __construct($name, $price, $imgUrl, Category $categoryName){
+    public function __construct($name, $price, $imgUrl, Category $category){
         $this->name = $name;
         $this->price = $price;
         $this->imgUrl = $imgUrl;
-        $this->categoryName = $categoryName;
+        $this->category = $category;
     }
 
     public function getName(){
@@ -37,11 +37,11 @@ class Product{
         $this->imgUrl = $imgUrl;
     }
 
-    public function getCategoryName(){
-        return $this->categoryName;
+    public function getCategory(){
+        return $this->category;
     }
 
-    public function setCategoryName($categoryName){
-        $this->categoryName = $categoryName;
+    public function setCategory($category){
+        $this->category = $category;
     }
 }

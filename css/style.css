@@ -1,0 +1,19 @@
+body{
+    background-color: #0b0b71;
+}
+
+article {
+    aspect-ratio: 3/5;
+}
+
+.card {
+    overflow: clip;
+}
+
+.card-image img {
+    aspect-ratio: 1;
+}
+
+.card > div.card-body{
+    background-color: #f0dddd;
+}

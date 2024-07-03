@@ -25,5 +25,3 @@ $productsArray= [
 "trixieMouse" => new Toy("Topini di peluche Trixie", "4,99", "https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg", new Cat("Gatto", "Adulto"), "Morbido con codina in corda", "8,5 cm x 10 cm"),
 
 ];
-
-var_dump($productsArray);
