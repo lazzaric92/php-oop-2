@@ -4,8 +4,8 @@ require_once __DIR__ . "/Category.php";
 class Bird extends Category{
     private $type;
 
-    public function __construct($name, $type){
-        parent::__construct($name);
+    public function __construct($type){
+        parent::__construct("Uccello");
         $this->type = $type;
     }
 

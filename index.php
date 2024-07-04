@@ -1,6 +1,4 @@
-<?php 
-require_once __DIR__ . "/db/db.php";
-?>
+<?php require_once __DIR__ . "/db/db.php"; ?>
 
 <!DOCTYPE html>
 <html lang="it">

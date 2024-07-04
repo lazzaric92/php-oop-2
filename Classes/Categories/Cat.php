@@ -4,8 +4,8 @@ require_once __DIR__ . "/Category.php";
 class Cat extends Category{
     private $age;
 
-    public function __construct($name, $age){
-        parent::__construct($name);
+    public function __construct($age){
+        parent::__construct("Gatto");
         $this->age = $age;
     }
 

@@ -5,8 +5,8 @@ class Dog extends Category{
     private $size;
     private $age;
 
-    public function __construct($name, $size, $age){
-        parent::__construct($name);
+    public function __construct($size, $age){
+        parent::__construct("Cane");
         $this->size = $size;
         $this->age = $age;
     }
