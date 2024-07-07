@@ -2,12 +2,14 @@
 require_once __DIR__ . "/../Categories/Category.php";
 class Product{
     private $name;
+    private $brand;
     private $price;
     private $imgUrl;
     private $category;
 
-    public function __construct($name, $price, $imgUrl, Category $category){
+    public function __construct($name, $brand, $price, $imgUrl, Category $category){
         $this->name = $name;
+        $this->brand = $brand;
         $this->price = $price;
         $this->imgUrl = $imgUrl;
         $this->category = $category;
@@ -19,6 +21,14 @@ class Product{
 
     public function setName($name){
         $this->name = $name;
+    }
+
+    public function getBrand(){
+        return $this->brand;
+    }
+
+    public function setBrand($brand){
+        $this->brand = $brand;
     }
 
     public function getPrice(){

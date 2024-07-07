@@ -33,7 +33,10 @@
                                 <img src="<?php echo $product->getImgUrl() ?>" class="card-img-top" alt="<?php echo $product->getName() ?>" >
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title mb-2 fw-bold"><?php echo $product->getName() ?></h5>
+                                <h5 class="card-title mb-2 fw-bold">
+                                    <?php echo $product->getBrand() ?> - 
+                                    <?php echo $product->getName() ?>
+                                </h5>
                                 <h6 class="card-subtitle mb-3">
                                     <?php echo $product->getCategory()->getIcon() ?>
                                     <?php echo $product->getCategory()->getName() ?>

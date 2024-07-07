@@ -5,8 +5,8 @@ class Accessory extends Product{
     private $material;
     private $size;
 
-    public function __construct($name, $price, $imgUrl, $category, $material, $size){
-        parent::__construct($name, $price, $imgUrl, $category);
+    public function __construct($name, $brand, $price, $imgUrl, $category, $material, $size){
+        parent::__construct($name, $brand, $price, $imgUrl, $category);
         $this->material = $material;
         $this->size = $size;
     }
