@@ -35,15 +35,7 @@
                             <div class="card-body">
                                 <h5 class="card-title mb-2 fw-bold"><?php echo $product->getName() ?></h5>
                                 <h6 class="card-subtitle mb-3">
-                                    <?php if(get_class($product->getCategory()) === "Dog"){ ?>
-                                        <span><i class="fa-solid fa-dog"></i></span>
-                                    <?php } elseif(get_class($product->getCategory()) === "Cat"){ ?>
-                                        <span><i class="fa-solid fa-cat"></i></span>
-                                    <?php } elseif(get_class($product->getCategory()) === "Bird"){ ?>
-                                        <span><i class="fa-solid fa-dove"></i></span>
-                                    <?php } elseif(get_class($product->getCategory()) === "Fish"){ ?>
-                                        <span><i class="fa-solid fa-fish"></i></span>
-                                    <?php } ?>
+                                    <?php echo $product->getCategory()->getIcon() ?>
                                     <?php echo $product->getCategory()->getName() ?>
                                 </h6>
                                 <p class="card-text mb-2">Prezzo: &euro; <?php echo $product->getPrice() ?></p>
